@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>HouseExpo Dataset</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+.center { width: 640; 
+          margin-left: auto;
+          margin-right: auto;
+          display: block}
+</style>
+<body>
+  <img src="./HouseExpo/collection.png" alt="HTML5 Icon" width="100%">
+
+
+<!-- Page content -->
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="dataset">
+    <h2 class="w3-wide">HouseExpo Dataset</h2>
+    <p class="w3-justify">Autonomously exploring a priori unknown environment is an essential task for mobile robots. Due to the lack of a unified experimental platform, current works towards this problem are often evaluated in a few manually designed scenarios. Meanwhile, with the recent development of deep learning techniques, some researchers attempt to apply learning based methods to the exploration problem, which requires a substantial amount of data. To satisfy the underlying demand, in this paper we build HouseExpo, a large-scale indoor layout dataset, ranging from single-room studios to multi-room houses. In our paper, we conducted three experiments and the training set and the testing set can be downloaded through the following link. And the whole dataset together with the simulator will come soon.
+    </p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Single-room Exploration</p>
+        <a href="./HouseExpo/single-room.tar.gz">Training/testing 30/20.</a>
+      </div>
+      <div class="w3-third">
+        <p>Multi-room Exploration (small)</p>
+        <a href="./HouseExpo/multi-room-small.tar.gz">Training/testing 20/20.</a>
+      </div>
+      <div class="w3-third">
+        <p>Multi-room Exploration (large)</p>
+        <a href="./HouseExpo/multi-room-large.tar.gz">Training/testing 130/20.</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="video">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Deep Reinforcement Learning based Exploration</h2>
+        <p class="w3-justify">With an emphasis on generalization ability, we use HouseExpo to benchmark deep reinforcement learning based methods on the robot exploration problem. The experiments show that the trained agent indeed learns some useful skills like avoiding obstacles and moving along walls. It is also verified that the generalization performance is affected by the complexity of environments and the training set size. A short explanation video is attached below. 
+        </p>
+        <video width="640" controls="" class="center">
+          <source src="./HouseExpo/IROS.mp4" type="video/mp4">
+        </video>      
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
